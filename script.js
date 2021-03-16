@@ -1,6 +1,6 @@
 function compute()
 { var p = parseInt(document.getElementById("principal").value);
-if(p==0)
+if(p<=0)
 {
 alert("please enter positive number");
 }
