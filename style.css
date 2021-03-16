@@ -1,4 +1,22 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:black;}
+h1{color:grey;
+font-size:40px;}
+#div1{border-radius: 25px;
+  background-color:white;
+  padding: 20px; 
+  width: 80%;
+  height: auto; 
+margin-left:100px;
+margin-right:100px;
+font-size:25px; 
+}
+*{ font-size:25px;}
+#table1{
+border-spacing:15px;}
+.interest {
+background-color:#FFFF00;
+}
+
+
 
 
