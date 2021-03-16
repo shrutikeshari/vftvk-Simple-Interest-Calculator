@@ -1,16 +1,44 @@
 <html>
     <head>
-    <script src="script.js"></script>
+    <script src="script.js">
+</script>
     <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+    <body onload="display()">
+<div id="div1">
+<center>
         <h1>Simple Interest Calculator</h1>
+<table id="table1"> <tr>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+       <td> Amount</td><td> <input type="number"  id="principal"> </td></tr> 
+        <tr> <td>Interest Rate </td><td> <input type="range" min="0" max="100" step="0.1" id="rate" value="5.0" onchange="changeRate(this.value)" oninput="changeRate(this.value)">
+<span id="range1">5.0% </span></td></tr> 
+        <tr> <td>No. of Years</td>
+<td> <select id="year">
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+</select>
+</td></tr> 
+       <tr><td><button onclick="compute()">Compute Interest</button></td></tr></table></center>
+<center><p id="result"><table><tr><td>
+if you deposit <span id="span1" class="interest"></span></td><td></td></tr>
+		<tr> <td>at an interest rate of <span id="span2" class="interest"></span></td><td></td></tr>
+<tr> <td>You will receive an amount of <span id="span3" class="interest"></span></td><td></td></tr>
+<tr> <td> in the year <span id="span4" class="interest"></span></td><td></td></tr>
+</table></p></center><br>
+&copy; Everyone Can Get Rich
 
-        <button onclick="compute()">Compute</button>
+</div>
+        
     </body>
 </html>
