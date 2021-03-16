@@ -1,8 +1,10 @@
 function compute()
-{ var p = parseInt(document.getElementById("principal").value);
-if(p<=0)
+{ var p1 = document.getElementById("principal");
+var p=parseInt(p1.value);
+if(p1.value=="" || p<=0)
 {
 alert("please enter positive number");
+p1.focus()
 }
 else {
 document.getElementById('result').style.display="block";
